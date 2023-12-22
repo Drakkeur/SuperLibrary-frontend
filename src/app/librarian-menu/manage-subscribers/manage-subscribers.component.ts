@@ -12,6 +12,7 @@ import { UserService } from './services/user.service';
 export class ManageSubscribersComponent {
 
   userList: any[] = [];
+  inputValue: number = 0;
 
   constructor(private userService: UserService) {
   }
@@ -20,6 +21,12 @@ export class ManageSubscribersComponent {
     this.userService.getUsers().subscribe(users => {
       this.userList = users;
     });
+  }
+
+  searchUserById(id : number) {
+    this.userService.getUserById(id).subscribe(user => {
+      this.userList = [user];
+      });
   }
 
     // GetUsers(): Observable<any> {

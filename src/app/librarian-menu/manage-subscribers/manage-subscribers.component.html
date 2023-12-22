@@ -1,9 +1,9 @@
 
 <form>
     <label for="sub-id">Rechercher par ID : </label>
-    <input type="number" id="sub-id" name="sub-id"><br><br>
+    <input type="number" id="sub-id" name="sub-id" [(ngModel)]="inputValue"><br><br>
 
-    <input type="submit" value="Valider">
+    <input (click)="searchUserById(inputValue)" type="submit" value="Valider">
 </form>
 
 <table>
@@ -25,4 +25,5 @@
     </tbody>
 </table>
 
-<button>Ajouter un abonné</button>
+<button><a routerLink="newsub" routerLinkActive="active">Ajouter un abonné</a></button>
+

@@ -1,6 +1,6 @@
 {
     "/api-superlibrary/*": {
-        "target": "http://localhost:4030",
+        "target": "http://localhost:8080", // port de l'API back-end
         "secure": false,
         "changeOrigin": true,
         "logLevel": "debug"

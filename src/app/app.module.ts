@@ -6,7 +6,10 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ManageSubscribersComponent } from './librarian-menu/manage-subscribers/manage-subscribers.component';
+import { AddNewSubscriberComponent } from './librarian-menu/manage-subscribers/add-new-subscriber/add-new-subscriber.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -15,11 +18,15 @@ import { HttpClientModule } from '@angular/common/http';
     LandingPageComponent,
     HeaderComponent,
     ManageSubscribersComponent,
+    AddNewSubscriberComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,30 @@
+<form [formGroup]="userForm">
+  <label>Type d'utilisateur: </label>
+  <input type="number" formControlName="typeUser"><br>
+
+  <label>Login: </label>
+  <input type="text" formControlName="login"><br>
+
+  <label>Mot de passe: </label>
+  <input type="password" formControlName="password"><br>
+
+  <label>Nom: </label>
+  <input type="text" formControlName="name"><br>
+
+  <label>Prénom: </label>
+  <input type="text" formControlName="firstname"><br>
+
+  <label>Adresse: </label>
+  <input type="text" formControlName="address"><br>
+
+  <label>Email: </label>
+  <input type="email" formControlName="email"><br>
+
+  <label>Numéro de téléphone: </label>
+  <input type="text" formControlName="phoneNumber" pattern="^0[1-9]([-. ]?[0-9]{2}){4}$"><br>
+
+  <label>Commentaire: </label>
+  <textarea formControlName="comment"></textarea><br>
+
+  <button type="button" (click)="createUser()">Créer Abonné</button>
+</form>
