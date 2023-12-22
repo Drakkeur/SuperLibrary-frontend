@@ -1,0 +1,28 @@
+
+<form>
+    <label for="sub-id">Rechercher par ID : </label>
+    <input type="number" id="sub-id" name="sub-id"><br><br>
+
+    <input type="submit" value="Valider">
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Emprunt</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of userList">
+            <th>{{ user.id }}</th>
+            <th>{{ user.name }}</th>
+            <th>{{ user.firstname }}</th>
+            <th>{{ user.loans }}</th>
+        </tr>
+    </tbody>
+</table>
+
+<button>Ajouter un abonné</button>

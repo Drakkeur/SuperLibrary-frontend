@@ -1,0 +1,8 @@
+{
+    "/api-superlibrary/*": {
+        "target": "http://localhost:4030",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug"
+    }
+}
